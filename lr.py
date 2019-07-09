@@ -70,11 +70,11 @@ domain = np.linspace(0, 20, 1000)
 
 print(W.value(), b.value())
 
-dy.renew_cg()
+# dy.renew_cg()
+#
+# response = W*dy.inputTensor(domain.reshape((1, -1)))+b
 
-response = W*dy.inputTensor(domain.reshape((1, -1)))+b
-
-plt.figure()
-plt.scatter(x, y)
-plt.plot(domain, response.npvalue().reshape((-1,)), color='red')
-plt.show()
+# plt.figure()
+# plt.scatter(x, y)
+# plt.plot(domain, response.npvalue().reshape((-1,)), color='red')
+# plt.show()
