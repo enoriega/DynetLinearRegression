@@ -70,6 +70,8 @@ domain = np.linspace(0, 20, 1000)
 
 print(W.value(), b.value())
 
+exit(1)
+
 # dy.renew_cg()
 #
 # response = W*dy.inputTensor(domain.reshape((1, -1)))+b
